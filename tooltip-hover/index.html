@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Custom plugin</title>
+        <link type="text/css" rel="stylesheet" href="css/custom.css">
+        <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+        <script type="text/javascript" src="js/custom-plugin.js"></script>
+    </head>
+    <body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>Posts</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <form id="testForm">
+        <input type="text" id="txtInput1" placeholder="Enter Your First Name">
+        <input type="text" id="txtInput2" placeholder="Enter Your Last Name">
+        <input type="text" id="txtInput3" placeholder="Enter Your Age">
+        <input type="text" id="txtInput4" placeholder="Enter Your DOB">
+    </form>
+    </body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#testForm").popUpTooltip();
+    });
+</script>
+</html>
